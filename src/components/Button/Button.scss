@@ -1,0 +1,55 @@
+.button {
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+
+  &_primary {
+    background-color: #0738DA;
+    color: #FFFFFF;
+  }
+
+  &_secondary {
+    background-color: #B8DE9E;
+    color: #69A265;
+  }
+
+  &_tertiary {
+    background-color: #B3C6F3;
+    color: #0738DA;
+  }
+
+  &:hover {
+    background-color: #262D3D;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #969CAC;
+    color: #FFFFFF;
+  }
+  
+  &:disabled {
+    background-color: #EEF0F6;
+    color: #FFFFFF;
+  }
+
+
+  &_small {
+    font-size: 12px;
+    padding: 3px 11px;
+    border-radius: 4px;
+  }
+
+  &_normal {
+    padding: 11px 41px;
+  }
+
+  &_medium {
+    padding: 18px 90px;
+  }
+
+  &_large {
+    padding: 20px 100px;
+  }
+}
