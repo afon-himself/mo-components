@@ -6,6 +6,9 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
+    children: {
+      control: 'text'
+    },
     size: {
       options: ['small', 'normal', 'medium', 'large'],
       control: 'select'
@@ -23,12 +26,13 @@ export default {
   }
 } as Meta;
 
-const Template: Story<ComponentProps<typeof Button>> = (args) => <Button {...args}>Example text</Button>
+const Template: Story<ComponentProps<typeof Button>> = (args) => <Button {...args}></Button>
 
 export const ButtonStory = Template.bind({});
 ButtonStory.storyName = 'Button'
 ButtonStory.args = {
   type: 'primary',
   size: 'small',
-  disabled: false
+  disabled: false,
+  children: 'Text label'
 }
